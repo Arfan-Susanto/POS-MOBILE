@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "825287750831",
+    "firebase_url": "https://pos-saas-26ea8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pos-saas-26ea8",
+    "storage_bucket": "pos-saas-26ea8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825287750831:android:a527e47586cf9a6171905a",
+        "android_client_info": {
+          "package_name": "com.possaas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfnueLcQd1eDzonHD9xN-RK8wynTHrZbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

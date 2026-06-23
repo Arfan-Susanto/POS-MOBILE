@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="60dp"
+                android:background="@color/accent"
+                android:layout_marginEnd="12dp" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Menu image" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMenuName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Name"
+                    android:textColor="#FDCF08"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/plus_jakarta" />
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2x"
+                    android:textColor="@color/accent"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotalSubHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textColor="#FDCF08"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/plus_jakarta"
+            android:layout_marginStart="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/dashed_primary" />
+
+</LinearLayout>

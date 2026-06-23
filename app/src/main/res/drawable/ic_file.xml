@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- File Container Background -->
+    <path
+        android:pathData="M4,2L4,22L20,22L20,8L14,2Z"
+        android:strokeColor="#39D321"
+        android:strokeWidth="1.5"
+        android:fillColor="#39D321" />
+
+    <!-- Fold Corner -->
+    <path
+        android:pathData="M14,2L14,8L20,8"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Horizontal line 1 -->
+    <path
+        android:pathData="M7,12L17,12"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+    <!-- Horizontal line 2 -->
+    <path
+        android:pathData="M7,15L17,15"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+    <!-- Horizontal line 3 -->
+    <path
+        android:pathData="M7,18L17,18"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+</vector>

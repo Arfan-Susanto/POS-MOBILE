@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:padding="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_menu_card"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:id="@+id/txtTitleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:text="Silahkan Isi Dibawah Ini"
+                    android:textColor="@color/accent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:text="Nama Menu"
+                    android:textColor="@color/accent"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtNamaMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input_yellow"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:hint="Masukkan nama menu disini...."
+                    android:paddingStart="16dp"
+                    android:textColor="@color/primary"
+                    android:textColorHint="#2BA90F2B"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:text="Harga"
+                    android:textColor="@color/accent"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtHarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input_yellow"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:hint="Masukkan harga disini...."
+                    android:inputType="numberDecimal"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/primary"
+                    android:textColorHint="#2BA90F2B"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:text="Kategori Menu"
+                    android:textColor="@color/accent"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/categoryMinumanDialog"
+                            style="@style/CategoryDialogUnselected"
+                            android:text="Minuman" />
+
+                        <TextView
+                            android:id="@+id/categoryMakananDialog"
+                            style="@style/CategoryDialogUnselected"
+                            android:layout_marginStart="12dp"
+                            android:text="Makanan" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/categoryAlacarteDialog"
+                            style="@style/CategoryDialogUnselected"
+                            android:text="A la carte" />
+
+                        <TextView
+                            android:id="@+id/categorySausDialog"
+                            style="@style/CategoryDialogUnselected"
+                            android:layout_marginStart="12dp"
+                            android:text="Saus" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/categoryPaketDialog"
+                        style="@style/CategoryDialogUnselected"
+                        android:layout_marginTop="12dp"
+                        android:text="Paket" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:text="Upload Foto"
+                    android:textColor="@color/accent"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_input_yellow"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgPreviewMenu"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logo_bfc"
+                        app:shapeAppearanceOverlay="@style/RoundedImageMenu"
+                        app:strokeColor="@color/primary"
+                        app:strokeWidth="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/btnUploadMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/bg_upload_photo"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm_plex"
+                            android:text="Upload disini"
+                            android:textColor="@color/accent"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/ic_upload" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnSelesai"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_input_yellow"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm_plex"
+                        android:text="Selesai"
+                        android:textColor="@color/primary"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btnClose"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bg_close_circle"
+            android:elevation="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_close" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

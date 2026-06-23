@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bg_header_admin"
+            android:paddingTop="48dp">
+
+            <LinearLayout
+                android:id="@+id/btnBack"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_back_yellow"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_back"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="Edit Stok"
+                android:textColor="@color/accent"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:fontFamily="@font/plus_jakarta"/>
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerStock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/bg_button_tambah"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selesai"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/plus_jakarta"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="18dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textColor="#A90F2B"
+        android:textStyle="bold"
+        android:fontFamily="@font/plus_jakarta"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_primary_rounded"
+        android:hint="Masukkan nama lengkap disini..."
+        android:textColor="@color/accent"
+        android:textColorHint="#E83B1D"
+        android:fontFamily="@font/plus_jakarta"
+        android:paddingHorizontal="20dp"/>
+
+</LinearLayout>

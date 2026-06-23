@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Left eye closed line -->
+    <path
+        android:strokeColor="#A90F2B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M2,12 Q6,15 12,15"
+        android:fillColor="#00000000" />
+    <!-- Right eye closed line -->
+    <path
+        android:strokeColor="#A90F2B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M12,15 Q18,15 22,12"
+        android:fillColor="#00000000" />
+    <!-- Diagonal slash line (visibility blocked) -->
+    <path
+        android:strokeColor="#A90F2B"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M2,4 L22,20"
+        android:fillColor="#00000000" />
+</vector>
+
+
+

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/success"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="33dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_back_white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/success" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieSuccess"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                app:lottie_rawRes="@raw/berhasil"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran Berhasil"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/plus_jakarta"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mantap, pembayaran tersebut sudah berhasil"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/manrope"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_receipt_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/logo_pos"
+                        android:scaleType="centerInside" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID Invoice"
+                            android:textColor="@color/success"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/plus_jakarta" />
+
+                        <TextView
+                            android:id="@+id/txtInvoiceId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="POS-001"
+                            android:textColor="@color/success_65"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/plus_jakarta" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2.5dp"
+                    android:background="@drawable/dashed_success"
+                    android:layout_marginVertical="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Lengkap"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/plus_jakarta" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama lengkap yang dipesan"
+                        android:textColor="@color/success_65"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/plus_jakarta"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipe Order"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/plus_jakarta" />
+
+                    <TextView
+                        android:id="@+id/txtOrderType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Away"
+                        android:textColor="@color/success_65"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/plus_jakarta"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metode Pembayaran"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/plus_jakarta" />
+
+                    <TextView
+                        android:id="@+id/txtPaymentMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash"
+                        android:textColor="@color/success_65"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/plus_jakarta"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu"
+                    android:textColor="@color/success"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:layout_marginBottom="12dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvReceiptItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:nestedScrollingEnabled="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Harga"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/plus_jakarta" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txtTotalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 23.000"
+                        android:textColor="@color/success_65"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/plus_jakarta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Uang"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/plus_jakarta" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txtCashAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 30.000"
+                        android:textColor="@color/success_65"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/plus_jakarta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kembalian"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/plus_jakarta" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txtChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 7.000"
+                        android:textColor="@color/success_65"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/plus_jakarta" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnExportPdf"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_white_rounded"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_file"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Export PDF"
+                    android:textColor="@color/success"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/ibm_plex" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#A90F2B</color>
+    <color name="secondary">#E6212A</color>
+    <color name="accent">#FDCF08</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="success">#39D321</color>
+    <color name="process">#A98100</color>
+
+    <!-- Status Colors -->
+    <color name="success_text">#15FF00</color>
+    <color name="process_bg">#A98100</color>
+
+    <!-- Transparent helpers (65% transparency -> hex alpha A6) -->
+    <color name="success_65">#A639D321</color>
+    <color name="success_69">#B039D321</color>
+    <color name="process_69">#B0A98100</color>
+    <color name="failed_69">#B0E6212A</color>
+
+    <!-- 65% transparency versions -->
+    <color name="primary_65">#A6A90F2B</color>
+    <color name="accent_65">#A6FDCF08</color>
+    <color name="process_65">#A6D86425</color>
+    <color name="black_65">#A6000000</color>
+
+    <!-- PDF / UI Helpers -->
+    <color name="light_gray">#F2F2F2</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/txtTipeOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipe Order"
+        android:textColor="#A90F2B"
+        android:textSize="20sp"
+        android:fontFamily="@font/plus_jakarta"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTakeAway"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="Take Away"
+            android:textAllCaps="false"
+            android:textColor="#A90F2B"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/plus_jakarta"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button_selected"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDineIn"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:text="Dine In"
+            android:textAllCaps="false"
+            android:textColor="#FDCF08"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:fontFamily="@font/plus_jakarta"
+            android:background="@drawable/bg_button_unselected"/>
+
+    </LinearLayout>
+
+</LinearLayout>

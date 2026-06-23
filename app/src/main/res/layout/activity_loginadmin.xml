@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo_aplikasi_pos"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang, Silahkan Input"
+        android:textColor="@color/primary"
+        android:textSize="18.5sp"
+        android:fontFamily="@font/plus_jakarta"
+        android:textStyle="bold"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/cardForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        android:paddingTop="16dp"
+        android:minHeight="320dp"
+        android:background="@drawable/bg_login_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/accent"
+            android:textSize="17.2sp"
+            android:fontFamily="@font/plus_jakarta"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_input_yellow"
+            android:hint="Masukkan email disini...."
+            android:textColor="@color/primary"
+            android:textColorHint="#40A90F2B"
+            android:fontFamily="@font/plus_jakarta"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/accent"
+            android:textSize="17.2sp"
+            android:fontFamily="@font/plus_jakarta"
+            android:layout_marginBottom="6dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_input_yellow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="50dp">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Masukkan password disini...."
+                android:textColor="@color/primary"
+                android:textColorHint="#40A90F2B"
+                android:inputType="textPassword"
+                android:fontFamily="@font/plus_jakarta"
+                android:paddingHorizontal="12dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/imgTogglePasswordAdmin"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_eye_open"
+                android:contentDescription="Toggle password visibility"
+                android:scaleType="centerInside"
+                app:tint="@color/primary"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:text="LOG IN"
+            android:textAllCaps="false"
+            android:textColor="@color/secondary"
+            android:backgroundTint="@color/accent"
+            android:fontFamily="@font/manrope"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By"
+            android:textColor="@color/accent"
+            android:textSize="14sp"
+            android:fontFamily="@font/plus_jakarta"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KELOMPOK 13"
+            android:textColor="@color/accent"
+            android:textSize="14sp"
+            android:fontFamily="@font/ibm_plex"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/bg_login_red"
+        android:scaleType="fitXY"
+        android:rotation="180"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo_aplikasi_pos"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Role"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:fontFamily="@font/plus_jakarta"
+            android:textStyle="bold"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="80dp"/>
+
+        <RelativeLayout
+            android:id="@+id/cardAdmin"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="25dp"
+            android:padding="16dp"
+            android:background="@drawable/ripple_admin"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADMIN"
+                android:textColor="@color/accent"
+                android:textSize="18sp"
+                android:fontFamily="@font/plus_jakarta"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_admin"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardKasir"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="100dp"
+            android:padding="16dp"
+            android:background="@drawable/ripple_kasir"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KASIR"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:fontFamily="@font/plus_jakarta"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img_kasir"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@null"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            android:fontFamily="@font/plus_jakarta"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KELOMPOK 13"
+            android:textColor="@color/secondary"
+            android:textSize="14sp"
+            android:fontFamily="@font/ibm_plex"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

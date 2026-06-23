@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_closed"
+        android:padding="24dp"
+        android:layout_gravity="center"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/tvClosedTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toko Ditutup"
+            android:fontFamily="@font/plus_jakarta"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <ImageView
+            android:id="@+id/imgClosed"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/closed"
+            android:contentDescription="closed" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <LinearLayout
+            android:id="@+id/btnKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textColor="@color/accent"
+                android:fontFamily="@font/ibm_plex"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

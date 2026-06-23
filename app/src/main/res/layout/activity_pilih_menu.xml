@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bg_header_kasir"
+            android:paddingTop="48dp">
+
+            <LinearLayout
+                android:id="@+id/btnBack"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_back_primary"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/accent"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/plus_jakarta"
+                android:textStyle="bold"
+                android:text="Pilih Menu"
+                android:textColor="@color/primary"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_search_pilih_menu"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/primary"/>
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@null"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:hint="Cari menu..."
+                    android:inputType="text"
+                    android:textColor="@color/primary"
+                    android:textColorHint="@color/primary_65"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_filter_primary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_filter"
+                    app:tint="@color/primary"/>
+
+                <TextView
+                    android:id="@+id/txtFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:textStyle="bold"
+                    android:text="Default"
+                    android:textColor="@color/primary"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/categoryMinuman"
+                    style="@style/CategoryPilihMenu"
+                    android:text="Minuman"/>
+
+                <TextView
+                    android:id="@+id/categoryMakanan"
+                    style="@style/CategoryPilihMenu"
+                    android:layout_marginStart="12dp"
+                    android:text="Makanan"/>
+
+                <TextView
+                    android:id="@+id/categoryAlacarte"
+                    style="@style/CategoryPilihMenu"
+                    android:layout_marginStart="12dp"
+                    android:text="Ala carte"/>
+
+                <TextView
+                    android:id="@+id/categorySaus"
+                    style="@style/CategoryPilihMenu"
+                    android:layout_marginStart="12dp"
+                    android:text="Saus"/>
+
+                <TextView
+                    android:id="@+id/categoryPaket"
+                    style="@style/CategoryPilihMenu"
+                    android:layout_marginStart="12dp"
+                    android:text="Paket"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="120dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <include layout="@layout/bottom_sheet_order"/>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

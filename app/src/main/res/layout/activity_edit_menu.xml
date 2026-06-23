@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bg_header_admin"
+            android:paddingTop="48dp">
+
+            <LinearLayout
+                android:id="@+id/btnBack"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_back_yellow"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/plus_jakarta"
+                android:text="Edit Menu"
+                android:textColor="@color/accent"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_search_menu_admin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_search"
+                    android:tint="@color/accent" />
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@null"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:hint="Ketikkan disini nama menu..."
+                    android:textColorHint="#E83B1D"
+                    android:inputType="text"
+                    android:textColor="@color/accent"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_filter_menu_admin"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_filter"
+                    android:tint="@color/accent" />
+
+                <TextView
+                    android:id="@+id/txtFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:text="Default"
+                    android:textColor="@color/accent"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/categoryMinuman"
+                    style="@style/CategoryUnselected"
+                    android:text="Minuman" />
+
+                <TextView
+                    android:id="@+id/categoryMakanan"
+                    style="@style/CategoryUnselected"
+                    android:layout_marginStart="12dp"
+                    android:text="Makanan" />
+
+                <TextView
+                    android:id="@+id/categoryAlacarte"
+                    style="@style/CategoryUnselected"
+                    android:layout_marginStart="12dp"
+                    android:text="A la carte" />
+
+                <TextView
+                    android:id="@+id/categorySaus"
+                    style="@style/CategoryUnselected"
+                    android:layout_marginStart="12dp"
+                    android:text="Saus" />
+
+                <TextView
+                    android:id="@+id/categoryPaket"
+                    style="@style/CategoryUnselected"
+                    android:layout_marginStart="12dp"
+                    android:text="Paket" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="130dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnTambahMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/bg_button_tambah"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_plus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/plus_jakarta"
+            android:text="Tambah Menu"
+            android:textColor="@color/primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</RelativeLayout>

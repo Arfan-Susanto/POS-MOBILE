@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="12dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgMenuItem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="12dp"
+        app:shapeAppearanceOverlay="@style/RoundedImageMenu"
+        app:strokeColor="@color/success"
+        app:strokeWidth="2dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi + Ayam"
+            android:textColor="@color/success"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/plus_jakarta" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/success"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/plus_jakarta"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMenuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 9.000"
+        android:textColor="@color/success_65"
+        android:textSize="14sp"
+        android:fontFamily="@font/plus_jakarta" />
+</LinearLayout>

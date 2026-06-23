@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/headerRoot"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/bg_header_kasir"
+        android:paddingTop="48dp">
+
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_back_primary"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/ivBackIcon"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/accent"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTitleHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/plus_jakarta"
+            android:textStyle="bold"
+            android:text="Riwayat Transaksi"
+            android:textColor="@color/primary"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

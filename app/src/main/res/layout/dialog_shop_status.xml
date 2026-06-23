@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <FrameLayout
+        android:id="@+id/dialogWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/dialogContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_dialog_status"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Status Toko"
+                    android:textColor="@color/accent"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <LinearLayout
+                android:id="@+id/cardBuka"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card_yellow"
+                android:paddingStart="20dp"
+                android:paddingEnd="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvBuka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buka"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ivBukaStatus"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/bg_status_success"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardTutup"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card_yellow"
+                android:paddingStart="20dp"
+                android:paddingEnd="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvTutup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tutup"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/plus_jakarta"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ivTutupStatus"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/bg_status_failed"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnClose"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bg_close_circle"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_close"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavCard" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavCard"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bg_bottom_nav_kasir"
+        android:elevation="14dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iconHome"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/ic_home_kasir"/>
+
+            <TextView
+                android:id="@+id/textHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:alpha="0"
+                android:text="Beranda"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:fontFamily="@font/plus_jakarta"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iconProfile"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/ic_profile_kasir"/>
+
+            <TextView
+                android:id="@+id/textProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:alpha="0"
+                android:text="Profile"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:fontFamily="@font/plus_jakarta"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/accent"
+        android:alpha="0"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/viewCircle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_circle_accent"
+        android:alpha="0"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgSplashIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:alpha="0"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/plus_jakarta"
+        android:alpha="0"
+        android:visibility="gone"/>
+
+</RelativeLayout>

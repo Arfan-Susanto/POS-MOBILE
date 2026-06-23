@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PosSaaS"
+        android:usesCleartextTraffic="true">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity
+            android:name=".SplashVideoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.possaas.Onboarding.OnboardingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.possaas.Role.RoleActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.possaas.Login.LoginAdminActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.possaas.Login.LoginKasirActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".FiturAdmin.EditKasir.EditKasirActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.possaas.AdminActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.possaas.KasirActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name=".FiturAdmin.EditMenu.EditMenuActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FiturAdmin.EditStok.EditStockActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".FiturKasir.PilihMenu.PilihMenuActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FiturKasir.PaymentSuccess.PaymentSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FiturKasir.TransactionHistory.TransactionHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FiturAdmin.Dashboard.DashboardActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>
